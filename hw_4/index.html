@@ -3,46 +3,52 @@
         <head>
             <meta charset='UTF-8'>
             <title>hw_4</title>
-        </head>
-<body> 
+            <link rel="stylesheet" href="styles/reset.css">
+            <link rel="stylesheet" href="styles/style.css">       #
+       </head>
+<body>
     <form action="#" method="get" name="contact">
-      <label>Повне ім'я
+      <label><span>Повне ім'я</span>
         <input type="text" name="fullname" placeholder="Повне ім'я" required>
-      </label><br>
-      <label>Email
-        <input type="email" name="email" required>
-      </label><br>
-      <label>Пароль
-        <input type="password" name="password" required>
-      </label><br>
-      <label>Пароль ще раз
-        <input type="password" name="password" required>
-      </label><br>
-      <label>Стать
-        <input type="radio" name="sex" value="male" required> Чоловіча 
       </label>
-      <label>
-        <input type="radio" name="sex" value="female" required> Жіноча
-      </label><br>
-      <label>Вік
+      <label><span>Email</span>
+        <input type="email" name="email" required>
+      </label>
+      <label><span>Пароль</span>
+        <input type="password" name="password" required>
+      </label>
+      <label><span>Пароль ще раз</span>
+        <input type="password" name="password" required>
+      </label>
+      <div> 
+        <label><span>Стать</span>
+          <input type="radio" name="sex" value="male" required>Чоловіча 
+        </label>
+        <label>
+          <input type="radio" name="sex" value="female" required>Жіноча
+        </label> 
+      </div>
+      <label><span>Вік</span>
         <input type="number" name="age" required>
-      </label><br>
-      <label>Курс
-        <select>
+      </label>
+      <label><span>Курс</span>
+        <select class="input">
             <option>Front-end</option>
             <option>Back-end</option>
             <option>Project Management</option>
             <option>QA manual</option>
         </select>
-      </label><br>
-      <label>Повна адреса
-        <textarea name="adress">Країна,регіон,місто.селище,вулиця</textarea> 
-      </label><br>
+      </label>
+      <label><span>Повна адреса</span>
+        <textarea name="adress" Placeholder="Країна,регіон,місто.селище,вулиця"></textarea> 
+      </label>
       <lable>
-        <input type="checkbox" value="agree_on_data_processing" required> Я погоджуюсь із обробкою персональних даних
-      </lable><br>
+        <input type="checkbox" value="agree_on_data_processing" required>Я погоджуюсь із обробкою персональних даних
+      </lable>
+    <div class="button">
       <button type="submit">Зареєструватись</button>
-      <button type="reset">Очистити фору</button>
-    </form>
+      <button type="reset">Очистити форму</button>
+    </div>
+  </form>
 </body>
-     </html>
+</html>
