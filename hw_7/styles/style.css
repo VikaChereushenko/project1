@@ -23,14 +23,12 @@ main section h3 {
                           "cafe cafe castle"
                           "street bridge bridge";
 }
-
 .tower {
     grid-area: tower; 
 }
 .road {
     grid-area: road;
 }
-
 .cafe {
     grid-area: cafe;
 }
