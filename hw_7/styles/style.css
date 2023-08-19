@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+main section h3 {
+    color: #000;
+    font-family: Delius Unicase;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    margin-bottom: 80;
+    text-align: center;
+}
+.architecture {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    grid-template-areas: "tower road road"
+                          "cafe cafe castle"
+                          "street bridge bridge";
+}
+
+.tower {
+    grid-area: tower; 
+}
+.road {
+    grid-area: road;
+}
+
+.cafe {
+    grid-area: cafe;
+}
+.castle {
+    grid-area: castle;
+}
+.street {
+    grid-area: street;
+}
+.bridge {
+    grid-area: bridge;
+}
+.author {
+   
+}
