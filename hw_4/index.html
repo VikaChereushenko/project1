@@ -1,0 +1,54 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset='UTF-8'>
+            <title>hw_4</title>
+            <link rel="stylesheet" href="styles/reset.css">
+            <link rel="stylesheet" href="styles/style.css">  
+       </head>
+<body>
+    <form action="#" method="get" name="contact">
+      <label><span>Повне ім'я</span>
+        <input type="text" name="fullname" placeholder="Повне ім'я" required>
+      </label>
+      <label><span>Email</span>
+        <input type="email" name="email" required>
+      </label>
+      <label><span>Пароль</span>
+        <input type="password" name="password" required>
+      </label>
+      <label><span>Пароль ще раз</span>
+        <input type="password" name="password" required>
+      </label>
+      <div> 
+        <label><span>Стать</span>
+          <input type="radio" name="sex" value="male" required>Чоловіча 
+        </label>
+        <label>
+          <input type="radio" name="sex" value="female" required>Жіноча
+        </label> 
+      </div>
+      <label><span>Вік</span>
+        <input type="number" name="age" required>
+      </label>
+      <label><span>Курс</span>
+        <select class="input">
+            <option>Front-end</option>
+            <option>Back-end</option>
+            <option>Project Management</option>
+            <option>QA manual</option>
+        </select>
+      </label>
+      <label><span>Повна адреса</span>
+        <textarea name="adress" Placeholder="Країна,регіон,місто.селище,вулиця"></textarea> 
+      </label>
+      <lable>
+        <input type="checkbox" value="agree_on_data_processing" required>Я погоджуюсь із обробкою персональних даних
+      </lable>
+    <div class="button">
+      <button type="submit">Зареєструватись</button>
+      <button type="reset">Очистити форму</button>
+    </div>
+  </form>
+</body>
+</html>
