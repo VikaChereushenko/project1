@@ -152,7 +152,7 @@ main section ul{
     max-width: 970px;
     height: 540px;
 }
-.project_name{
+.project_name a {
     color:#070707;
     text-align: center;
     font-family: Open Sans;
@@ -165,7 +165,7 @@ main section ul{
     margin-top: 40px;
     margin-bottom: 70px;
 }
-#Braun{
+#Braun a {
     color:#070707;
     text-align: center;
     font-family: Open Sans;
