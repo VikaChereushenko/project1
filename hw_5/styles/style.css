@@ -1,0 +1,98 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 17px 120px;
+}
+nav {
+    width: 352px;
+    height: 28px;
+    display: inline;
+    margin: 0 198px;
+}
+nav ul {
+    display: inline;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: #2F281E;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a:hover {
+    color: #F90;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+button {
+    display: inline;
+    padding: 13px 25px;
+}
+.sign_in {
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    background-color: #FFF;
+    color:#2F281E;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.sign_up {
+    margin-left: 32px;
+    background-color: #F90;
+    border-radius: 4px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;   
+}
+.section_one {
+    margin-top: 70px;
+}
+.people {
+    float: right;
+}
+.section_one h2 {
+    color: #2F281E;
+    font-family: Montserrat;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+.section_one p {
+    color: #544837;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.section_one button {
+    padding: 13px 40px;
+    border-radius: 4px;
+    background: #F90;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
