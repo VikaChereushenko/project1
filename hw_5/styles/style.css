@@ -51,7 +51,6 @@ button {
 }
 .sign_up {
     margin-left: 32px;
-    margin-right: o;
     background-color: #F90;
     border-radius: 4px;
     color: #FFF;
@@ -63,14 +62,11 @@ button {
 }
 .section_one {
     margin-top: 70px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
 }
-.first_screen {
-    margin-top: 97px;
+.people {
+    float: right;
 }
-.first_screen h2 {
+.section_one h2 {
     color: #2F281E;
     font-family: Montserrat;
     font-size: 44px;
@@ -78,17 +74,17 @@ button {
     font-weight: 700;
     line-height: 54px;
 }
-.first_screen p {
+.section_one p {
     color: #544837;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; 
+    line-height: 28px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.first_screen button {
+.section_one button {
     padding: 13px 40px;
     border-radius: 4px;
     background: #F90;
@@ -100,112 +96,3 @@ button {
     font-weight: 700;
     line-height: normal;
 }
-.section_two {
-    margin: 100px auto;
-    text-align: center;
-    background-image: url(../images/bg.png);
-    background-position-x: center;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-}
-.section_two h3 {
-    color: #2F281E;
-    text-align: center;    
-    font-family: Montserrat;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.features {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30.77;
-}
-.features div h4 {
-    color: #2F281E;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 30px;
-}
-.features div p {
-    color: #544837;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-    margin-top: 16px;
-}
-.section_two button {
-    width: 180px;
-    height: 50px;
-    padding: 13px 40px;
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background-color: #F90;
-    margin: 70px auto 74px auto;
-}
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 70px 0;
-}
-footer div h5 {
-    color: #2F281E;
-    font-family: Gotham;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px; 
-    margin-bottom: 30px;
-}
-footer div ul li a{
-    color: #544837;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; 
-    text-decoration: none;
-    margin-bottom: 15px;
-}
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.legal_stuff {
-    margin-bottom: 25px;
-}
-.form input {
-    width: 340px;
-    height: 50px;
-    padding: 0 10px;
-}
-.form button {
-    width: 180px;
-    height: 50px;
-    padding: 13px 40px;
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background-color: #F90;
-    margin-top: 25px;
-}
-
-
-
-
