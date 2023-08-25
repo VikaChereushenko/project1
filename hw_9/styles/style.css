@@ -78,6 +78,13 @@ main img {
     justify-content: space-between;
     gap: 30px;
     margin-top: 70px;
+    position:relative;
+    height: 100%;
+}
+.sidebar {
+    position: sticky;
+    top:0;
+    left: 0;
 }
 .sidebar ul li {
     display: flex;
@@ -119,6 +126,16 @@ main img {
     text-transform: uppercase; 
     display: inline-block;
     margin-top: 30px;
+}
+.info text {
+    color: #000;
+    font-feature-settings: 'sups' on;
+    font-family: Farro;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin-left: 10px;
 }
 .info p {
     color: #000;
