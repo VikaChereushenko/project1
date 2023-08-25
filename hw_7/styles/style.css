@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     max-width: 1170px;
-    margin: 0 auto;
+    margin: 120px auto;
 }
 main section h3 {
     color: #000;
@@ -17,11 +17,71 @@ main section h3 {
 .architecture {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 370px);
     gap: 30px;
     grid-template-areas: "tower road road"
                           "cafe cafe castle"
                           "street bridge bridge";
+}
+.item {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background: var(--blure, linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.50%));
+ }
+ .item:hover {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background: unset;
+}
+.item:hover .icon {
+    opacity: 1;
+}
+.item .picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+.info {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: space-between;
+   box-sizing: border-box;
+   padding: 20px;
+}
+.author {
+    display: flex;
+    justify-content: space-between;
+}
+.icon {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+}
+.name {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.date {
+    color: var(--gray-5, #E0E0E0);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .tower {
     grid-area: tower; 
@@ -41,6 +101,72 @@ main section h3 {
 .bridge {
     grid-area: bridge;
 }
-.author {
-   
+.still_life {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 307px 737px 307px;
+    gap: 30px;
+    grid-template-areas: "water sea sea"
+                          "rock rock lake "
+                          "lavanda lavanda tree";
 }
+.waterfall {
+    grid-area: water;
+}
+.sea {
+    grid-area: sea;
+}
+.rock {
+    grid-area: rock;
+}
+.lake {
+    grid-area: lake;
+}
+.lavanda {
+    grid-area: lavanda;
+}
+.tree {
+    grid-area: tree;
+}
+.fashion {
+    display: grid;
+    grid-template-columns: repeat(3,);
+    grid-template-rows: repeat(5, 307px);
+    gap: 30px;
+    grid-template-areas: "black yellow grey"
+                         "blue yellow red"
+                         "white glasses red"
+                         "white friend friend"
+                         "man man green";
+}
+.black {
+    grid-area: black;
+}
+.yellow {
+    grid-area: yellow;
+}
+.grey {
+    grid-area: grey;
+}
+.blue {
+    grid-area: blue;
+}
+.red {
+    grid-area: red;
+}
+.white {
+    grid-area: white;
+
+}
+.glasses {
+    grid-area: glasses;
+}
+.friend {
+    grid-area: friend;
+}
+.man {
+   grid-area: man;
+}
+.green {
+   grid-area: green;
+} 
