@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Delius Unicase;
+    src: url(../fonts/DeliusUnicase-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.ttf) format(truetype);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf) format(truetype);
+}
 .container {
     width: 100%;
     max-width: 1170px;
@@ -7,7 +19,7 @@ main section h3 {
     color: #000;
     font-family: Delius Unicase;
     font-size: 36px;
-    font-style: normal;
+    font-style: regular;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.8px;
@@ -71,7 +83,7 @@ main section h3 {
     color: #FFF;
     font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
+    font-style: medium;
     font-weight: 500;
     line-height: normal;
 }
@@ -79,7 +91,7 @@ main section h3 {
     color: var(--gray-5, #E0E0E0);
     font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
+    font-style: regular;
     font-weight: 400;
     line-height: normal;
 }
