@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Tourney;
+    src: url("../fonts/Tourney-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Staatliches;
+    src: url("../fonts/Staatliches-Regular.ttf") format(truetype);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Francois One;
+    src: url("../fonts/FrancoisOne-Regular.ttf") format(truetype);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Farro;
+    src: url("../fonts/Farro-Light.ttf") format(truetype);
+    font-weight: 300;
+}
+@font-face {
+    font-family: PT Sans;
+    src: url("../fonts/PTSans-Regular.ttf") format(truetype);
+    font-weight: 400;
+}
+@font-face {
+    font-family: PT Sans;
+    src: url("../fonts/PTSans-Bold.ttf") format(truetype);
+    font-weight: 700;
+}
+@font-face {
+    font-family: PT Sans;
+    src: url(../fonts/PTSans-Italic.ttf) format(truetype);
+    font-weight: 400;
+    font-style: italic;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin: 13px 0 13px auto;
+}
+.language{
+    color: #000000;
+    font-family: Tourney, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.88px;
+    text-decoration: none;
+    margin-right: 50px;
+}
+nav ul li a {
+    color: #000;
+    font-family: Staatliches, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    text-decoration: none;
+}
+main {
+    padding-bottom: 90px;
+}
+main section {
+    margin-top: 70px;
+}
+main section div {
+    display: flex;
+    width: auto;
+    height: 48px;
+}
+main section div h3 {
+    color: #000;
+    font-family: Francois One, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase; 
+    display: inline-block;
+}
+main section div span {
+    color: #000;
+    font-feature-settings: 'sups' on;
+    font-family: Farro;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin-left: 10px;
+}
+main section p {
+    color: #000;
+    font-family: PT Sans, sans-serif;
+    font-size: 28px;
+    font-style: regular;
+    font-weight: 400;
+    line-height: 48px; 
+    margin-top: 40px;
+}
+.bold {
+    color: #000;
+    font-family: PT Sans, sans-serif;
+    font-size: 28px;
+    font-style: bold;
+    font-weight: 700;
+    line-height: 48px; 
+    margin-top: 40px;
+}
+.italic {
+    color: #000;
+    font-family: PT Sans, sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 48px; 
+    margin-top: 40px;
+}
+.background {
+    background-color: lightgray;
+}
+
+
+
+    
