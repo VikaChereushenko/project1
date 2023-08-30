@@ -12,12 +12,8 @@ main section {
 }
 main section .top {
   grid-area: top;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 main section div text {
@@ -44,24 +40,16 @@ main section div h1 {
 main .photo {
   grid-area: photo;
   border-right: #FC0 1px solid;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 main .photo div {
   position: relative;
   width: 100%;
   max-width: 430px;
   height: auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
+  align-content: center;
   box-sizing: border-box;
   padding: 15px;
 }
@@ -107,30 +95,22 @@ main .photo div.div_4 {
 }
 main .info {
   grid-area: info;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-main .info div {
+main .info div.wrapper {
   position: relative;
   width: 100%;
   max-width: 430px;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
+  align-content: center;
 }
-main .info div h3 {
+main .info div.wrapper h3 {
   color: #666;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
@@ -138,16 +118,20 @@ main .info div h3 {
   line-height: normal;
   text-transform: capitalize;
   margin: 0;
+  position: relative;
 }
-main .info div hr {
+main .info div.wrapper h3:after {
+  content: "";
+  display: block;
   width: 100px;
   height: 1px;
   background-color: #FC0;
   border: none;
   margin-top: 30px;
   margin-bottom: 30px;
+  bottom: 0;
 }
-main .info div text {
+main .info div.wrapper h4 {
   color: #666666;
   text-align: center;
   width: 100%;
@@ -159,18 +143,14 @@ main .info div text {
   line-height: 36px;
   text-transform: capitalize;
 }
-main .info div.icons {
-  display: -webkit-flex;
-  display: -ms-flexbox;
+main .info div.wrapper .icons {
   display: flex;
   width: 100%;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 50px;
 }
-main .info div p {
+main .info div.wrapper p {
   width: 100%;
   max-width: 430px;
   color: #333;
@@ -181,47 +161,32 @@ main .info div p {
   font-weight: 500;
   line-height: 24px;
 }
-main .info div div {
-  display: -webkit-flex;
-  display: -ms-flexbox;
+main .info div.wrapper .dots {
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
   gap: 5px;
-  width: 50px;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  padding: 20px 0 25px 0;
 }
-main .info div div.span1 {
+main .info div.wrapper .dots span:nth-child(1), main .info div.wrapper .dots span:nth-child(3) {
+  display: block;
   width: 10px;
   height: 4px;
-  background-color: #FC0;
+  background-color: gold;
 }
-main .info div div.span2 {
+main .info div.wrapper .dots span:nth-child(2) {
+  display: block;
   width: 20px;
   height: 4px;
-  background-color: #FC0;
+  background-color: gold;
 }
-main .info div div.span3 {
-  width: 10px;
-  height: 4px;
-  background-color: #FC0;
-}
-main .info div.link {
-  display: -webkit-flex;
-  display: -ms-flexbox;
+main .info div.wrapper .link {
+  width: 118px;
+  height: 24px;
+  margin: 0 auto;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-main .info div.link a {
+  justify-content: center;
+  align-items: center;
   color: #666;
-  text-align: center;
   font-family: Open Sans;
   font-size: 14px;
   font-style: normal;
@@ -230,5 +195,6 @@ main .info div.link a {
   text-transform: uppercase;
   text-decoration: none;
   border: #FC0 1px solid;
-  padding: 5px 10px;
 }
+
+/*# sourceMappingURL=style.css.map */
