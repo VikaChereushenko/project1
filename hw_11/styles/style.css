@@ -1,0 +1,324 @@
+container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section .create {
+  display: grid;
+  width: 100%;
+  max-width: 570px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 67px) 92px auto 67px auto;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 20px;
+  grid-template-areas: "head head" "first last" "email email" "gender gender" "country city" "accept accept";
+}
+section .create h4 {
+  grid-area: head;
+  color: #1C1C1C;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+section .create .first_name {
+  grid-area: first;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 7px;
+  width: 100%;
+}
+section .create .first_name span {
+  color: #545454;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+section .create .first_name input {
+  height: 100%;
+  max-height: 38px;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 5px;
+}
+section .create .last_name {
+  grid-area: last;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 7px;
+  width: 100%;
+}
+section .create .last_name span {
+  color: #545454;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+section .create .last_name input {
+  height: 100%;
+  max-height: 38px;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 5px;
+}
+section .create .email {
+  grid-area: email;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  gap: 7px;
+}
+section .create .email span {
+  color: #545454;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+section .create .email input {
+  height: 100%;
+  max-height: 67px;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 5px;
+}
+section .create .email p {
+  color: #969696;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  margin: 0;
+}
+section .create .gender {
+  grid-area: gender;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+section .create .gender input {
+  margin-right: 8px;
+}
+section .create .gender span {
+  color: #545454;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+section .create .country {
+  grid-area: country;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 7px;
+  width: 100%;
+}
+section .create .country span {
+  color: #545454;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+section .create .country select {
+  height: 100%;
+  max-height: 38px;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 5px;
+}
+section .create .city {
+  grid-area: city;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 7px;
+  width: 100%;
+}
+section .create .city span {
+  color: #545454;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+section .create .city input {
+  height: 100%;
+  max-height: 38px;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 5px;
+}
+section .create .accept {
+  grid-area: accept;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section .create .accept button {
+  width: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  background-color: #007BFF;
+  border: unset;
+  border-radius: 5px;
+}
+section .create .accept .info {
+  width: 100%;
+  max-width: 410px;
+  color: #969696;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+}
+section .create .accept .info a {
+  color: #007BFF;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  text-decoration: none;
+}
+section .create .accept .other {
+  border-top: 1px solid #E4E4E4;
+  width: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section .create .accept .other .question {
+  color: #545454;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+section .create .accept .other .question a {
+  color: #007BFF;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  text-decoration: none;
+  margin-left: 20px;
+}

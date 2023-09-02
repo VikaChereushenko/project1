@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset='UTF-8'>
+      <title>hw_11</title>
+      <link rel="stylesheet" href="styles/reset.css">
+      <link rel="stylesheet" href="styles/style.css">
+</head>
+  <body>
+    <form action="#" method="post" name="contact">
+      <section class="container">
+        <div class="create">
+          <h4>Create an account</h4>
+            <lable class="first_name"><span>First name</span>
+              <input type="text" name="First name">
+            </lable>
+            <lable class="last_name"><span>Last name</span>
+              <input type="text" name="Last name" required>
+            </lable>
+            <lable class="email"><span>E-mail</span>
+              <input type="email" name="email" required>
+              <p>We'll never share your email with anyone else.</p>
+            </lable>
+            <div class="gender">
+              <label>
+                <input type="radio" name="sex" value="male" required><span>Male</span> 
+              </label>
+                <label>
+                  <input type="radio" name="sex" value="female" required><span>Female</span>
+                </label> 
+              </div>
+              <label class="country"><span>Country</span>
+                <select>
+                  <option></option>
+                  <option>Ukraine</option>
+                  <option>The United Kingdom of Great Britain</option>
+                  <option>The United States of America</option>
+                  <option>Spain</option>
+                </select>
+              </label>
+              <lable class="city"><span>City</span>
+                <input type="text" name="city name" required>
+              </lable>
+              <div class="accept">
+                <button type="submit">Sign up</button>
+                <p class="info">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                <div class="other">
+                  <p class="question">Have an account?<a href="#">Log In</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="profile">
+              <h4>Profile</h4>
+              <div class="photo">
+                <img src="img/photo.png" alt="">
+                <input type="photo">
+                <p>Up to 1 MB (300x300 px)</p>
+                <button type="reset">reset</button>
+              </div>
+              <div class="name">
+                <label><span>Name</span>
+                  <input type="text" name="fullname" required>
+                </label>
+              </div>
+              <div class="email">
+                <lable><span>E-mail</span>
+                  <input type="email" name="email" required>
+                </lable>
+              </div>
+              <div class="country">
+                <label><span>Country</span>
+                  <select>
+                    <option></option>
+                    <option>Ukraine</option>
+                    <option>The United Kingdom of Great Britain</option>
+                    <option>The United States of America</option>
+                    <option>Spain</option>
+                    </select>
+                </label>
+              </div>
+              <div class="city">
+                <lable><span>City</span>
+                  <input type="text" name="city name" required>
+                </lable>  
+              </div>
+              <div class="zip_code">
+                <lable><span>Zip code</span>
+                  <input type="number" name="zip code number" required>
+                </lable>
+              </div>
+              <div class="phone">
+                <lable><span>Phone Number</span>
+                  <input type="number" name="phone number" required>
+                </lable>
+              </div>
+              <button type="submit">Update</button>
+            </div>
+            </section>
+          </form>
+        </main>
+    </body>
+</html>
