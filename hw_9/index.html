@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset='UTF-8'>
+            <title>hw_8</title>
+            <link rel="stylesheet" href="styles/reset.css">
+            <link rel="stylesheet" href="styles/style.css">
+        </head>
+<body>
+     <header class="container">
+            <nav>
+                <a href="#" class="language">ENG</a>
+                <ul>
+                    <li>
+                        <a href="#">documentation /</a>
+                        <a href="#">who's using</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="logo"><img src="images/company-logo-black.png" alt="logo"></a>
+    </header>
+    <main>
+        <img src="images/bg-picture.png" alt="">
+        <div class="container general">
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="#intro">introduction</a>
+                        <a href="#core">core components</a>
+                        <a href="#react">react fundamentals</a>
+                        <a href="#input">handling text input</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <section>
+                    <span></span>              
+                    <h3 id="intro">introduction</h3><sup>chapter1</sup>             
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup<br>
+                        instructions, they've moved to <u>their own section.</u> Continue reading for an introduction to the documentation,<br>
+                        Native Components, React, and more!</p>
+                </section>
+                <section>
+                    <span></span>  
+                    <div>
+                        <h3 id="core">core components</h3><sup>chapter2</sup>
+                    </div>
+                    <p>React Native is an open source framework for building Android and iOS applications using React and<br>
+                       the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s<br>
+                       APIs as well as to describe the appearance and behavior of your UI using React components: <text class="italic">bundles
+                        of reusable, nestable code.</text>You can learn more about React in the next section. But first, let’s cover<br>
+                       how components work in React Native.</p>
+                </section>
+                <section>
+                    <span></span>  
+                    <div>
+                        <h3 id="react">react fundamentals</h3><sup>chapter3</sup>
+                    </div>
+                    <p>React Native runs on <u>React</u>, a popular open source library for building user interfaces with<br>
+                       JavaScript. To make the most of React Native, it helps to understand React itself. This section can get<br>
+                       you started or can serve as a refresher course.
+                    </p>
+                    <p>We’re going to cover the core concepts behind React: </p>
+                    <p><text class="bold">+ components.</text>The rest of this introduction to React uses cats in its examples: friendly,<br>
+                         approachable creatures that need names and a cafe to work in.
+                    </p>
+                    <p><text class="bold">+ JSX.</text> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like so:<br>
+                        <text class="background"> &lt;Text>Hello, I am your cat! &lt;/Text&gt;</text>
+                    </p>
+                    <p>
+                        The React docs have <u>a comprehensive guide to JSX</u> you can refer to learn even more. Because JSX is<br>
+                        JavaScript, you can use variables inside it. Here you are declaring a <text class="background">name</text> for the cat, name, and<br>
+                        embedding it with curly braces inside <text class="background">&lt;Text></text>
+                    </p>
+                    <p><text class="bold">+ props.</text> Props is short for “properties”.</p>
+                    <p><text class="bold">+ state. </text> While you can think of props as arguments you use to configure how components render,<br>
+                        state is like a component’s personal data storage. State is useful for handling data that changes over <br>
+                        time or that comes from user interaction. State gives your components memory!
+                    </p>
+                </section>
+                <section>
+                    <span></span>  
+                    <div>
+                        <h3 id="input">handling text input</h3><sup>chapter4</sup>
+                    </div>
+                    <p>TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that<br>
+                       takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a<br>
+                       function to be called when the text is submitted.</p>
+                    <p>For example, let's say that as the user types, you're translating their words into a different language.<br>
+                       In this new language, every single word is written the same way: 🍕. So the sentence "Hello there<br>
+                       Bob" would be translated as "🍕 🍕".</p>
+                </section> 
+            </div>
+        </div>
+    </main>
+</body>
