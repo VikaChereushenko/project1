@@ -1,11 +1,12 @@
 container {
   width: 100%;
   max-width: 1440px;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
 }
 
 section {
+  background-color: #F7F7F7;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -16,7 +17,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  background-color: #F7F7F7;
 }
 section .create {
   display: grid;
@@ -76,6 +76,10 @@ section .create .first_name input {
   border: 1px solid #E4E4E4;
   border-radius: 5px;
 }
+section .create .first_name input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
 section .create .last_name {
   grid-area: last;
   display: -webkit-flex;
@@ -108,6 +112,10 @@ section .create .last_name input {
   width: 100%;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
+}
+section .create .last_name input:focus {
+  outline: none;
+  border-color: #007BFF;
 }
 section .create .email {
   grid-area: email;
@@ -142,6 +150,10 @@ section .create .email input {
   border: 1px solid #E4E4E4;
   border-radius: 5px;
 }
+section .create .email input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
 section .create .email p {
   color: #969696;
   font-family: Roboto;
@@ -164,11 +176,34 @@ section .create .gender {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+  position: relative;
 }
 section .create .gender input {
-  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  box-sizing: border-box;
 }
-section .create .gender span {
+section .create .gender input:checked + span {
+  border: 7px solid #007BFF;
+}
+section .create .gender .check_male {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #E4E4E4;
+  position: absolute;
+  left: 0;
+}
+section .create .gender .check_female {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #E4E4E4;
+  position: absolute;
+  left: 72px;
+}
+section .create .gender .name {
   color: #545454;
   font-family: Roboto;
   font-size: 15px;
@@ -176,6 +211,10 @@ section .create .gender span {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.2px;
+  margin-left: 8px;
+}
+section .create .gender .female {
+  margin-left: 6px;
 }
 section .create .country {
   grid-area: country;
@@ -193,6 +232,7 @@ section .create .country {
           align-items: flex-start;
   gap: 7px;
   width: 100%;
+  position: relative;
 }
 section .create .country span {
   color: #545454;
@@ -209,6 +249,33 @@ section .create .country select {
   width: 100%;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+section .create .country select:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+section .create .country .text {
+  color: #E4E4E4;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  position: absolute;
+  left: 10px;
+  bottom: 7px;
+  margin: 0;
+}
+section .create .country svg {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 18px;
+  height: 18px;
 }
 section .create .city {
   grid-area: city;
@@ -242,6 +309,10 @@ section .create .city input {
   width: 100%;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
+}
+section .create .city input:focus {
+  outline: none;
+  border-color: #007BFF;
 }
 section .create .accept {
   grid-area: accept;
@@ -384,6 +455,10 @@ section .profile .photo .camera input {
   border-radius: 5px;
   position: relative;
 }
+section .profile .photo .camera input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
 section .profile .photo .camera svg {
   position: absolute;
   top: 7px;
@@ -391,7 +466,7 @@ section .profile .photo .camera svg {
 }
 section .profile .photo p {
   grid-area: paragraph;
-  align-self: self-start;
+  text-align: center;
   margin: 0;
   width: 100%;
   max-width: 141px;
@@ -446,6 +521,10 @@ section .profile .name input {
   border: 1px solid #E4E4E4;
   border-radius: 5px;
 }
+section .profile .name input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
 section .profile .email {
   grid-area: email;
   display: -webkit-flex;
@@ -479,6 +558,10 @@ section .profile .email input {
   border: 1px solid #E4E4E4;
   border-radius: 5px;
 }
+section .profile .email input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
 section .profile .country {
   grid-area: country;
   display: -webkit-flex;
@@ -495,6 +578,7 @@ section .profile .country {
           align-items: flex-start;
   width: 100%;
   gap: 7px;
+  position: relative;
 }
 section .profile .country span {
   color: #545454;
@@ -511,6 +595,33 @@ section .profile .country select {
   width: 100%;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+section .profile .country select:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+section .profile .country .text {
+  color: #E4E4E4;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  position: absolute;
+  left: 10px;
+  bottom: 7px;
+  margin: 0;
+}
+section .profile .country svg {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 18px;
+  height: 18px;
 }
 section .profile .city {
   grid-area: city;
@@ -545,6 +656,10 @@ section .profile .city input {
   border: 1px solid #E4E4E4;
   border-radius: 5px;
 }
+section .profile .city input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
 section .profile .zip {
   grid-area: zip;
   display: -webkit-flex;
@@ -578,6 +693,10 @@ section .profile .zip input {
   border: 1px solid #E4E4E4;
   border-radius: 5px;
 }
+section .profile .zip input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
 section .profile .phone {
   grid-area: phone;
   display: -webkit-flex;
@@ -610,6 +729,10 @@ section .profile .phone input {
   width: 100%;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
+}
+section .profile .phone input:focus {
+  outline: none;
+  border-color: #007BFF;
 }
 section .profile button {
   grid-area: button;
