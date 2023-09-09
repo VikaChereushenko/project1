@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset='UTF-8'>
+      <title>hw_11</title>
+      <link rel="stylesheet" href="styles/reset.css">
+      <link rel="stylesheet" href="styles/style.css">
+</head>
+  <body>
+    <form action="#" method="post" name="contact">
+      <section class="container">
+        <div class="create">
+          <h4>Create an account</h4>
+            <lable class="first_name"><span>First name</span>
+              <input type="text" name="First name">
+            </lable>
+            <lable class="last_name"><span>Last name</span>
+              <input type="text" name="Last name" required>
+            </lable>
+            <lable class="email"><span>E-mail</span>
+              <input type="email" name="email" required>
+              <p>We'll never share your email with anyone else.</p>
+            </lable>
+            <div class="gender">
+              <label>
+                <input type="radio" name="sex" value="male" required><span class="check_male"></span><span class="name">Male</span> 
+              </label>
+                <label>
+                  <input type="radio" name="sex" value="female" required><span class="check_female"></span><span class="name female">Female</span>
+                </label> 
+              </div>
+              <label class="country"><span>Country</span>
+                <p class="text">Select</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.25L3.75 7.5H14.25L9 2.25ZM9 15.75L3.75 10.5H14.25L9 15.75Z" fill="#969696"/>
+                </svg>
+                <select>
+                  <option value=""></option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="The UK">The United Kingdom of Great Britain</option>
+                  <option value="The USA">The United States of America</option>
+                  <option value="Spain">Spain</option>
+                </select>
+              </label>
+              <lable class="city"><span>City</span>
+                <input type="text" name="city name" required>
+              </lable>
+              <div class="accept">
+                <button type="submit">Sign up</button>
+                <p class="info">By clicking the 'Sign Up' button, you confirm that you accept our<br><a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                <div class="other">
+                  <p class="question">Have an account?<a href="#">Log In</a></p>
+                </div>
+              </div>
+        </div>
+        <div class="profile">
+          <h4>Profile</h4>
+          <div class="photo">
+            <img src="img/photo.png" alt="">
+            <label class="camera">
+              <input type="photo" name="photo" placeholder="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.78001 3.33333L6.00001 2H10L11.22 3.33333H13.3333C14.0667 3.33333 14.6667 3.93333 14.6667 4.66667V12.6667C14.6667 13.4 14.0667 14 13.3333 14H2.66668C1.93334 14 1.33334 13.4 1.33334 12.6667V4.66667C1.33334 3.93333 1.93334 3.33333 2.66668 3.33333H4.78001ZM4.66668 8.66667C4.66668 10.5067 6.16001 12 8.00001 12C9.84001 12 11.3333 10.5067 11.3333 8.66667C11.3333 6.82667 9.84001 5.33333 8.00001 5.33333C6.16001 5.33333 4.66668 6.82667 4.66668 8.66667ZM8.00001 10.8C9.17822 10.8 10.1333 9.84487 10.1333 8.66667C10.1333 7.48846 9.17822 6.53333 8.00001 6.53333C6.8218 6.53333 5.86668 7.48846 5.86668 8.66667C5.86668 9.84487 6.8218 10.8 8.00001 10.8Z" fill="#969696"/>
+              </svg>
+            </label>
+            <p>Up to 1 MB (300x300 px)</p>
+            <svg class="reset" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.00001 12.6667C4.00001 13.4 4.60001 14 5.33334 14H10.6667C11.4 14 12 13.4 12 12.6667V4.66667H4.00001V12.6667ZM12.6667 2.66667H10.3333L9.66668 2H6.33334L5.66668 2.66667H3.33334V4H12.6667V2.66667Z" fill="#969696"/>
+            </svg>
+          </div>
+          <label class="name"><span>Name</span>
+            <input type="text" name="fullname" required>
+          </label>
+          <lable class="email"><span>E-mail</span>
+            <input type="email" name="email" required>
+          </lable>
+          <label class="country"><span>Country</span>
+            <p class="text">Select</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.25L3.75 7.5H14.25L9 2.25ZM9 15.75L3.75 10.5H14.25L9 15.75Z" fill="#969696"/>
+            </svg>
+            <select>
+              <option value=""></option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="The UK">The United Kingdom of Great Britain</option>
+              <option value="The USA">The United States of America</option>
+              <option value="Spain">Spain</option>
+            </select>
+          </label>
+          <lable class="city"><span>City</span>
+            <input type="text" name="city name" required>
+          </lable> 
+          <lable class="zip"><span>Zip code</span>
+            <input type="number" name="zip code number" required>
+          </lable>
+          <lable class="phone"><span>Phone Number</span>
+            <input type="number" name="phone number" required>
+          </lable>
+          <button type="submit">Update</button>
+        </div>
+      </section>           
+    </form>
+  </body>
+</html>
