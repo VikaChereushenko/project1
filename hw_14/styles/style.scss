@@ -1,0 +1,147 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+        p {
+            color:#16133D;
+            font-family: Quicksand;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 35px;
+            display: flex;
+            &:before {
+                content: url(../svg/Vector.svg);
+        }
+    }
+}
+main {
+    padding: 100px 0;
+    box-sizing: content-box;
+    section {
+        p {
+            color:#7690A8;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #16133D;
+            font-family: Nunito Sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 52px;
+            letter-spacing: 0.2px;
+            margin-bottom: 40px;
+        }
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            .content {
+                padding: 40px;
+                border-radius: 8px;
+                border: 1px solid #E5EAF4;
+                background: #FFF;
+                &:hover {
+                    border-color: #52C29D;
+                }
+                &:hover svg {
+                    fill: #E1F4F5;
+                    stroke: #52C29D;
+                }
+                svg {
+                    margin-bottom: 30px;
+                }
+                h3 {
+                    color: #16133D;
+                    font-family: Roboto;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 21.28px;
+                    letter-spacing: 0.2px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    color:#16133D;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; 
+                    margin-bottom: 30px;
+                }
+                a {
+                    color: #3DB370;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+footer {
+    background: #16133D;
+    height: 193px;
+    padding: 40px;
+    box-sizing: border-box;
+    section {
+        background: #16133D;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        gap: 40px;
+        .logo {
+            width: 200px;
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            gap: 17px;
+            p {
+                color: white;
+                font-family: Quicksand;
+                font-size: 35px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 35px;
+                display: flex;
+                &:before {
+                    content: url(../svg/Vector.svg);
+                }
+            }
+        }
+        .socials {
+            display: flex;
+            justify-content: space-between;
+            gap:10px;
+            a {
+              svg {
+                width: 38px;
+                height: 38px;
+                border-radius: 5px;
+                background: #EFEEF3;
+                padding: 9px;
+                box-sizing: content-box;
+                }
+            &:hover svg {
+                fill: #3DB370;
+               }
+            }
+        }
+    }
+}
