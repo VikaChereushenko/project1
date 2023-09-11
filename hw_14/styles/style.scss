@@ -137,10 +137,10 @@ footer {
                 background: #EFEEF3;
                 padding: 9px;
                 box-sizing: content-box;
+                &:hover {
+                    fill: #3DB370;
+                   }
                 }
-            &:hover svg {
-                fill: #3DB370;
-               }
             }
         }
     }

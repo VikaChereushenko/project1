@@ -169,6 +169,6 @@ footer section .socials a svg {
   padding: 9px;
   box-sizing: content-box;
 }
-footer section .socials a:hover svg {
+footer section .socials a svg:hover {
   fill: #3DB370;
 }
