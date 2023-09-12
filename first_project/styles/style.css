@@ -57,6 +57,12 @@
           justify-content: space-between;
   width: 490px;
 }
+.first_screen header div nav ul li {
+  min-width: 41px;
+  max-width: 72px;
+  height: 24px;
+  box-sizing: border-box;
+}
 .first_screen header div nav ul li a {
   text-decoration: none;
   color: #262A3F;
@@ -134,12 +140,18 @@
   display: flex;
   margin-top: -317px;
 }
+.info img {
+  width: 100%;
+  max-width: 570px;
+  height: 670px;
+  object-fit: cover;
+}
 .info .data {
   background-color: #FFF;
   opacity: 0.9;
   width: 100%;
   max-width: 770px;
-  height: 580px;
+  max-height: 580px;
   margin-left: -200px;
   margin-top: 45px;
   display: -webkit-flex;
@@ -161,7 +173,8 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
 }
 .info .data .info_left h2 {
   color: #262A3F;
@@ -171,6 +184,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 72px;
+}
+.info .data .info_left .dollar:before {
+  content: url(../img/dollar.png);
+  margin-right: 10px;
 }
 .info .data .info_left p {
   color: #262A3F;
@@ -212,7 +229,8 @@
   font-weight: 300;
   line-height: 26px;
   margin-bottom: 50px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 .info .info_right button {
   border: none;
