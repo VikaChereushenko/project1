@@ -41,7 +41,7 @@
                         max-width: 72px;
                         height: 24px;
                         box-sizing: border-box;
-                        a{
+                        a {
                             text-decoration: none;
                             color:#262A3F;
                             font-family: Lato;
@@ -112,6 +112,13 @@
                     height: 13px;
                     background-color: rgba(241, 137, 123, 0.3);
                     transform: translate(10px, -9px);
+                }
+                &:hover {
+                    color: #E54F3A;
+                    &:after {
+                        opacity: 0.3;
+                        background: #E54F3A;
+                    }
                 }
             }
         }
@@ -224,6 +231,13 @@
                 height: 13px;
                 background-color: rgba(241, 137, 123, 0.3);
                 transform: translate(10px, -9px);
+            }
+            &:hover {
+                color: #E54F3A;
+                &:after {
+                    opacity: 0.3;
+                    background: #E54F3A;
+                }
             }
         }
     }
@@ -562,6 +576,14 @@
                 background-color: rgba(241, 137, 123, 0.3);
                 transform: translate(10px, -9px);
             }
+            &:hover {
+                color: #E54F3A;
+                border: 1px solid #E54F3A;
+                &:after {
+                    opacity: 0.3;
+                    background: #E54F3A;
+                }
+            }
         }
         .heading {
             color:#262A3F;
@@ -630,6 +652,7 @@
         font-weight: 400;
         line-height: 26px;
         opacity: 0.8;
+        z-index: 99;
     }
     .author {
         color:#FFF;
@@ -639,6 +662,7 @@
         font-weight: 400;
         line-height: 20px;
         letter-spacing: 1.6px;
+        z-index: 99;
     }
     .first_review {
         grid-area: first;
@@ -647,8 +671,16 @@
         justify-content: space-between;
         padding: 30px 40px;
         box-sizing: border-box;
-        background-image: url(../img/review_first.png);
+        background-image:url(../img/review_first.png);
         background-size: 100% 340px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
     .second_review {
         grid-area: second;
@@ -659,6 +691,14 @@
         box-sizing: border-box;
         background-image: url(../img/review_second.png);
         background-size: 100% 340px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
     .third_review {
         grid-area: third;
@@ -669,6 +709,14 @@
         box-sizing: border-box;
         background-image: url(../img/review_third.png);
         background-size: 100% 340px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 }
 .contact {
@@ -752,6 +800,13 @@
             background-color: rgba(241, 137, 123, 0.3);
             transform: translate(10px, -9px);
         }
+        &:hover {
+            color: #E54F3A;
+            &:after {
+                opacity: 0.3;
+                background: #E54F3A;
+            }
+        }
     }
 }
 footer {
@@ -770,6 +825,9 @@ footer {
         align-items: center;
         justify-content: space-between;
         gap: 32px;
+        a {
+            text-decoration: none;
+        }
     }
     .left_side {
         color: #262A3F;

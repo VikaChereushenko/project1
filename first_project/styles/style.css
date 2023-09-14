@@ -134,6 +134,13 @@
   -webkit-transform: translate(10px, -9px);
           transform: translate(10px, -9px);
 }
+.first_screen .first_screen_content .content button:hover {
+  color: #E54F3A;
+}
+.first_screen .first_screen_content .content button:hover:after {
+  opacity: 0.3;
+  background: #E54F3A;
+}
 
 .info {
   display: -webkit-flex;
@@ -262,6 +269,13 @@
   background-color: rgba(241, 137, 123, 0.3);
   -webkit-transform: translate(10px, -9px);
           transform: translate(10px, -9px);
+}
+.info .info_right button:hover {
+  color: #E54F3A;
+}
+.info .info_right button:hover:after {
+  opacity: 0.3;
+  background: #E54F3A;
 }
 
 .benefits {
@@ -649,6 +663,14 @@
   -webkit-transform: translate(10px, -9px);
           transform: translate(10px, -9px);
 }
+.promises .promises__info button:hover {
+  color: #E54F3A;
+  border: 1px solid #E54F3A;
+}
+.promises .promises__info button:hover:after {
+  opacity: 0.3;
+  background: #E54F3A;
+}
 .promises .promises__info .heading {
   color: #262A3F;
   font-family: Playfair Display;
@@ -717,6 +739,7 @@
   font-weight: 400;
   line-height: 26px;
   opacity: 0.8;
+  z-index: 99;
 }
 .reviews .author {
   color: #FFF;
@@ -726,6 +749,7 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 1.6px;
+  z-index: 99;
 }
 .reviews .first_review {
   grid-area: first;
@@ -742,6 +766,14 @@
   box-sizing: border-box;
   background-image: url(../img/review_first.png);
   background-size: 100% 340px;
+  position: relative;
+}
+.reviews .first_review img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .reviews .second_review {
   grid-area: second;
@@ -758,6 +790,14 @@
   box-sizing: border-box;
   background-image: url(../img/review_second.png);
   background-size: 100% 340px;
+  position: relative;
+}
+.reviews .second_review img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .reviews .third_review {
   grid-area: third;
@@ -774,6 +814,14 @@
   box-sizing: border-box;
   background-image: url(../img/review_third.png);
   background-size: 100% 340px;
+  position: relative;
+}
+.reviews .third_review img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contact {
@@ -870,6 +918,13 @@
   -webkit-transform: translate(10px, -9px);
           transform: translate(10px, -9px);
 }
+.contact button:hover {
+  color: #E54F3A;
+}
+.contact button:hover:after {
+  opacity: 0.3;
+  background: #E54F3A;
+}
 
 footer {
   height: 86px;
@@ -906,6 +961,9 @@ footer .links {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 32px;
+}
+footer .links a {
+  text-decoration: none;
 }
 footer .left_side {
   color: #262A3F;
