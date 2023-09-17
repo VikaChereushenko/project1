@@ -60,12 +60,16 @@
                     }
                 }
             }
+            .burger {
+                display: none;
+            }
         }
     }
     .first_screen_content {
         padding-top: 150px;
         .content {
-            width: 523px;
+            width: 100%;
+            max-width: 523px;
             height: 302px;
             h3 {
                 color: #262A3F;
@@ -128,8 +132,7 @@
     display: flex;
     margin-top: -317px;
     position: relative;
-    min-height: 670px;
-    max-height: auto;
+    height: 670px;
     img {
         width: 100%;
         max-width: 570px;
@@ -459,29 +462,35 @@
         border: 1px solid #E4E4E4;
         border-radius: 32px;
         padding: 30px 70px 31px 30px;
+        box-sizing: border-box;
         display: flex;
         align-items: center;
-        iframe {
-            border-radius: 8px;
+        position: relative;
+        .videoscreen {
             width: 100%;
             max-width: 870px;
-            max-height: 539px;
-            display: flex;
-            &:after {
-                content: "";
-                display: block;
-                max-width: 35px;
-                max-height: 35px;
-                border: 1px solid #E4E4E4;
-                border-radius: 50%;
-                margin-left: 21px;
-            }
+            height: 539px;
         }
+        .play_button {
+            position: absolute;
+            top: 40%;
+            left: 43%;
+            z-index: 1;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            max-width: 35px;
+            max-height: 35px;
+            position: absolute;
+            top: 283px;
+            right: 14px;
+           }
     }
     .text {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
         h3 {
             color:#262A3F;
             font-family: Playfair Display;
@@ -496,8 +505,8 @@
                 font-style: italic;
                 font-weight: 400;
                 line-height: 48px;
+                }
             }
-        }
         p {
             color: #262A3F;
             font-family: Lato;
@@ -780,31 +789,31 @@
                 margin-bottom: 12px;
             }
         }
-    }
-    button {
-        color: #F1897B;
-        font-family: Lato;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 1.6px;
-        text-transform: uppercase;
-        background: none;
-        border: unset;
-        &:after {
-            content: "";
-            display: block;
-            width: 180px;
-            height: 13px;
-            background-color: rgba(241, 137, 123, 0.3);
-            transform: translate(10px, -9px);
-        }
-        &:hover {
-            color: #E54F3A;
+        button {
+            color: #F1897B;
+            font-family: Lato;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            background: none;
+            border: unset;
             &:after {
-                opacity: 0.3;
-                background: #E54F3A;
+                content: "";
+                display: block;
+                width: 180px;
+                height: 13px;
+                background-color: rgba(241, 137, 123, 0.3);
+                transform: translate(10px, -9px);
+            }
+            &:hover {
+                color: #E54F3A;
+                &:after {
+                    opacity: 0.3;
+                    background: #E54F3A;
+                }
             }
         }
     }
@@ -846,5 +855,201 @@ footer {
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 1.12px;
+    }
+}
+@media (max-width: 717px) {
+    .first_screen {
+        header {
+            div {
+                nav {
+                    display: none;
+                }
+                .burger {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    padding: 2px;
+                    box-sizing: content-box;
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid black;
+                    span {
+                        display: block;
+                        width: 25px;
+                        height: 3px;
+                        background-color:black;
+                    }
+                }
+            }
+        }
+    }
+    .info {
+        .data {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-height: fit-content;
+            padding: 45px 0;
+            box-sizing: content-box;
+            .info_left {
+               
+               padding-bottom: 20px;
+               max-width: none;
+            }
+            .info_right {
+                display: flex;
+                flex-direction: column;
+                p {
+                    width: 100%;
+                    max-width: fit-content;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                button {
+                    align-self: center;
+                }
+            }
+        }
+    }
+    .benefits {
+        margin-top: 320px;
+        max-height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 10px;
+        grid-template-areas: "solution" 
+                              "integration"
+                              "payment"
+                              "return";
+    }
+    .quote {
+        div {
+            p {
+                font-size: 25px;
+                line-height: 30px;
+                text-align: center;
+            }
+            .italic {
+                max-width: none;
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+    .player {
+        .video {
+            padding: 30px 30px 70px 30px;
+            .videoscreen {
+                width: 100%;
+                max-width: 870px;
+                height: 539px;
+                object-fit: cover;
+            }
+            .play_button {
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 40%;
+                left: 45%;
+                z-index: 1;
+            }
+            svg {
+                width: 100%;
+                height: 100%;
+                max-width: 35px;
+                max-height: 35px;
+                position: absolute;
+                left: 45%;
+                top: 91%;
+            }
+        }
+    }
+    .promises {
+        .promises__info {
+            box-sizing: content-box;
+            max-height: fit-content;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: "trading"
+                                  "chain"
+                                  "time" 
+                                  "button";
+            button {
+              justify-self: center;
+            }
+            .heading {
+                font-size: 35px;
+                text-align: center;
+            }
+            .paragraph {
+                font-size: 22px;
+                text-align: center;
+            }
+        }
+    }
+    .reviews {
+        margin-top: 350px;
+    }
+    .contact {
+        height: fit-content;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        .contact-us {
+            h3 {
+             text-align: center;
+            }
+            p {
+             text-align: center;
+             margin-bottom: 30px;
+            }
+        }
+        form {
+            max-width: none;
+            label {
+                max-width: none;
+            }
+            button {
+                align-self: center;
+            }
+        }
+    }
+    footer {
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media (max-width: 495px) {
+    .benefits {
+        margin-top: 460px;
+    }
+}
+@media (max-width: 985px) {
+    .reviews {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 50px;
+        grid-template-areas: "top"
+                             "first" 
+                             "second"
+                             "third";
+        .top {
+            grid-area: top;
+            h3 {
+               text-align: center;
+               margin-bottom: 15px;
+            }
+            p {
+              text-align: center;
+            }
+        }
     }
 }
