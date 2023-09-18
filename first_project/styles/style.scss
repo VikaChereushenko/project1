@@ -857,6 +857,30 @@ footer {
         letter-spacing: 1.12px;
     }
 }
+@media (max-width: 985px) {
+    .reviews {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 50px;
+        grid-template-areas: "top"
+                             "first" 
+                             "second"
+                             "third";
+        .top {
+            grid-area: top;
+            h3 {
+               text-align: center;
+               margin-bottom: 15px;
+            }
+            p {
+              text-align: center;
+            }
+        }
+    }
+}
 @media (max-width: 717px) {
     .first_screen {
         header {
@@ -1029,27 +1053,263 @@ footer {
         margin-top: 460px;
     }
 }
-@media (max-width: 985px) {
+.dark {
+    background-color: #161926;
+    .first_screen {
+        background-image: url(../img/first-screen-image-dark.png);
+        header {
+            background: linear-gradient(270deg, rgba(22, 25, 38, 0.50) 0%, rgba(22, 25, 38, 0.00) 24.1%, rgba(22, 25, 38, 0.00) 47.19%), rgba(22, 25, 38, 0.02);
+            backdrop-filter: blur(4.5px);
+            div {
+                nav {
+                    ul {
+                        li {
+                            a {
+                                color: #FFF;
+                            }
+                            &:hover a:after {
+                                border-bottom: none;
+                                height: 3px;
+                                width: 100%;
+                                background: linear-gradient(97deg, #53F3CD 6.73%, rgba(83, 243, 205, 0.00) 116.9%);
+                            }
+                        }
+                    }
+                }
+                .burger {
+                    border: 2px solid white;
+                    span {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+        .first_screen_content {
+            .content {
+                h3 {
+                    color: #fff;
+                    span {
+                        color: #689FF2;
+                    }
+                }
+                p {
+                    color: #FFF;;
+                }
+                button {
+                    color: #53F3CD;
+                    &:after {
+                        opacity: 0.3;
+                        background-color: #53F3CD ;
+                    }
+                    &:hover {
+                        color:#02E0AB;
+                        &:after {
+                            background: #02E0AB;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info {
+        .data {
+            background-color:#161926;
+            .info_left {
+                h2 {
+                    color: #FFF;
+                }
+                p {
+                    color:#FFF;;
+                    }
+                .border {
+                    &:after {
+                        background-color: #689FF2;
+                    }
+                }
+            }
+        }
+        .info_right {
+            p {
+                color: white;
+            }
+            button {
+                color: #53F3CD;
+                    &:after {
+                        opacity: 0.3;
+                        background-color: #53F3CD ;
+                    }
+                    &:hover {
+                        color:#02E0AB;
+                        &:after {
+                            background: #02E0AB;
+                        }
+                   }
+               }
+           }
+    }
+    .benefits {
+        .solution {
+            border-top: 1px solid #515773;
+            div {
+                h3 {
+                    color: white;
+                    span {
+                        color: #689FF2;
+                    }
+                }
+                p {
+                    color: white;
+                }
+            }
+        }
+        .integration {
+            border-top: 1px solid #515773;
+            div {
+                h3 {
+                    color: white;
+                    span {
+                        color: #689FF2;
+                    }
+                }
+                p {
+                    color: white;
+                }
+            }
+        }
+        .payment {
+            border-top: 1px solid #515773;
+            div {
+                h3 {
+                    color: white;
+                    span {
+                        color: #689FF2;
+                    }
+                }
+                p {
+                    color: white;
+                }
+            }
+        }
+        .return {
+            border-top: 1px solid #515773;
+            div {
+                h3 {
+                    color: white;
+                    span {
+                        color: #689FF2;
+                    }
+                }
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+    .quote {  
+    }
+    .player {
+        .video {
+            border: 1px solid #515773;
+            }
+            .play_button {
+            }
+            svg {
+
+            }
+            .text {
+                h3 {
+                    color: white;
+                    span {
+                        color: #689FF2;
+                    }
+                }
+                p {
+                    color: white;
+                }
+            }
+    }
+    .promises {
+        .promises__info {
+            background: #161926;
+            button {
+                border: 1px solid #515773;
+                color: #53F3CD;
+                    &:after {
+                        opacity: 0.3;
+                        background-color: #53F3CD ;
+                    }
+                    &:hover {
+                        color:#02E0AB;
+                        border: 1px solid  #02E0AB;
+                        &:after {
+                            background: #02E0AB;
+                        }
+                    }
+            }
+            .heading {
+                color: white;
+            }
+            .paragraph {
+                color: white;
+            }
+        }
+    }
     .reviews {
-        height: fit-content;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 120px repeat(3, 1fr);
-        column-gap: 30px;
-        row-gap: 50px;
-        grid-template-areas: "top"
-                             "first" 
-                             "second"
-                             "third";
         .top {
-            grid-area: top;
             h3 {
-               text-align: center;
-               margin-bottom: 15px;
+                color: white;
+                span {
+                    color: #689FF2;
+                }
             }
             p {
-              text-align: center;
+                color: white;
             }
+        }
+    }
+    .contact {
+        border-top: 1px solid #515773;
+        border-bottom: 1px solid #515773;
+        .contact-us {
+            h3 {
+                color: white;
+                span {
+                    color: #689FF2;
+                }
+            }
+            p {
+                color: white;
+            }
+        }
+        form {
+            label {
+                color: white;
+                border-bottom: 1px solid #FFFFFF;
+                input {
+                    background-color: #161926;
+                }
+            }
+            button {
+                color: #53F3CD;
+                    &:after {
+                        opacity: 0.3;
+                        background-color: #53F3CD ;
+                    }
+                    &:hover {
+                        color:#02E0AB;
+                        &:after {
+                            background: #02E0AB;
+                        }
+                   }
+            }
+        }
+    }
+    footer {
+        .left_side {
+            color: white;         
+        }
+        .right_side {
+            color: white;
         }
     }
 }
