@@ -476,8 +476,10 @@
             top: 40%;
             left: 43%;
             z-index: 1;
+            width: 120px;
+            height: 120px;
         }
-        svg {
+        .ipad_button {
             width: 100%;
             height: 100%;
             max-width: 35px;
@@ -1205,16 +1207,31 @@ footer {
             }
         }
     }
-    .quote {  
+    .quote { 
+        div {
+            svg {
+                stop{
+                    stop-color: #53F3CD;
+                }
+            }
+        } 
     }
     .player {
         .video {
             border: 1px solid #515773;
-            }
-            .play_button {
-            }
-            svg {
-
+              .play_button {
+                circle {
+                    fill:#689FF2;
+                }
+                path {
+                    fill: #689FF2;
+                }
+              }
+              .ipad_button {
+                circle {
+                    stroke: #515773;
+                }
+              }
             }
             .text {
                 h3 {
@@ -1287,6 +1304,7 @@ footer {
                 border-bottom: 1px solid #FFFFFF;
                 input {
                     background-color: #161926;
+                    color: white;
                 }
             }
             button {
