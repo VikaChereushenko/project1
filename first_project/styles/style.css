@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(../fonts/PlayfairDisplay-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
 .container {
   width: 100%;
   max-width: 1170px;
@@ -39,12 +66,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.first_screen header div .logo {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  width: 107.202px;
-  height: 32px;
-}
 .first_screen header div nav ul {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -59,7 +80,9 @@
 }
 .first_screen header div nav ul li {
   min-width: 41px;
-  max-width: 72px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   height: 24px;
   box-sizing: border-box;
 }
@@ -92,7 +115,7 @@
 }
 .first_screen .first_screen_content .content h3 {
   color: #262A3F;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 44px;
   font-style: normal;
   font-weight: 400;
@@ -100,7 +123,7 @@
 }
 .first_screen .first_screen_content .content h3 span {
   color: #85BBB1;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 44px;
   font-style: italic;
   font-weight: 400;
@@ -197,7 +220,7 @@
 .info .data .info_left h2 {
   color: #262A3F;
   text-align: center;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 68px;
   font-style: normal;
   font-weight: 400;
@@ -301,10 +324,11 @@
 }
 .benefits .solution div {
   padding: 20px 30px;
+  box-sizing: border-box;
 }
 .benefits .solution div h3 {
   color: #262A3F;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -313,7 +337,7 @@
 }
 .benefits .solution div h3 span {
   color: #85BBB1;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
@@ -336,10 +360,11 @@
 }
 .benefits .integration div {
   padding: 20px 30px;
+  box-sizing: border-box;
 }
 .benefits .integration div h3 {
   color: #262A3F;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -348,7 +373,7 @@
 }
 .benefits .integration div h3 span {
   color: #85BBB1;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
@@ -371,10 +396,11 @@
 }
 .benefits .payment div {
   padding: 20px 30px;
+  box-sizing: border-box;
 }
 .benefits .payment div h3 {
   color: #262A3F;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -383,7 +409,7 @@
 }
 .benefits .payment div h3 span {
   color: #85BBB1;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
@@ -406,10 +432,11 @@
 }
 .benefits .return div {
   padding: 20px 30px;
+  box-sizing: border-box;
 }
 .benefits .return div h3 {
   color: #262A3F;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -418,7 +445,7 @@
 }
 .benefits .return div h3 span {
   color: #85BBB1;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
@@ -468,7 +495,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 .quote div p {
   color: #FFF;
@@ -486,7 +513,7 @@
 }
 .quote div .italic {
   color: #FFF;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
@@ -547,8 +574,6 @@
   height: 120px;
 }
 .player .video .ipad_button {
-  width: 100%;
-  height: 100%;
   max-width: 35px;
   max-height: 35px;
   position: absolute;
@@ -566,7 +591,7 @@
 }
 .player .text h3 {
   color: #262A3F;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -574,7 +599,7 @@
 }
 .player .text h3 span {
   color: #85BBB1;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
@@ -682,7 +707,7 @@
 }
 .promises .promises__info .heading {
   color: #262A3F;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -716,7 +741,7 @@
 }
 .reviews .top h3 {
   color: #262A3F;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -725,7 +750,7 @@
 }
 .reviews .top h3 span {
   color: #85BBB1;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
@@ -752,7 +777,7 @@
 }
 .reviews .author {
   color: #FFF;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
@@ -852,7 +877,7 @@
 }
 .contact .contact-us h3 {
   color: #262A3F;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -861,7 +886,7 @@
 }
 .contact .contact-us h3 span {
   color: #85BBB1;
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
@@ -897,7 +922,7 @@
 }
 .contact form label input {
   color: rgba(38, 42, 63, 0.5);
-  font-family: Playfair Display;
+  font-family: "PlayfairDisplay";
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
@@ -917,6 +942,7 @@
   text-transform: uppercase;
   background: none;
   border: unset;
+  padding: 0;
 }
 .contact form button:after {
   content: "";
@@ -1019,6 +1045,11 @@ footer .right_side {
   }
 }
 @media (max-width: 717px) {
+  .first_screen header div {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
   .first_screen header div nav {
     display: none;
   }
@@ -1048,6 +1079,15 @@ footer .right_side {
     height: 3px;
     background-color: black;
   }
+  .first_screen .first_screen_content {
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .first_screen .first_screen_content .content h3 {
+    font-size: 36px;
+  }
   .info .data {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -1069,6 +1109,9 @@ footer .right_side {
     max-width: none;
   }
   .info .data .info_right {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1095,15 +1138,21 @@ footer .right_side {
     max-height: -moz-fit-content;
     max-height: fit-content;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 10px;
     grid-template-areas: "solution" "integration" "payment" "return";
+  }
+  .quote div {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
   }
   .quote div p {
     font-size: 25px;
     line-height: 30px;
     text-align: center;
+    font-size: 20px;
   }
   .quote div .italic {
     max-width: none;
@@ -1111,30 +1160,28 @@ footer .right_side {
     text-align: center;
   }
   .player .video {
-    padding: 30px 30px 70px 30px;
+    width: 100%;
+    max-width: 435px;
+    height: 269px;
   }
   .player .video .videoscreen {
     width: 100%;
-    max-width: 870px;
-    height: 539px;
-    object-fit: cover;
+    max-width: 435px;
+    height: 269px;
+    object-fit: contain;
   }
   .player .video .play_button {
     width: 60px;
     height: 60px;
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    z-index: 1;
   }
-  .player .video svg {
-    width: 100%;
-    height: 100%;
-    max-width: 35px;
-    max-height: 35px;
-    position: absolute;
-    left: 45%;
-    top: 91%;
+  .player .video .ipad_button {
+    top: 117px;
+    right: 14px;
+  }
+  .player .text {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
   }
   .promises .promises__info {
     box-sizing: content-box;
@@ -1157,7 +1204,12 @@ footer .right_side {
     text-align: center;
   }
   .reviews {
-    margin-top: 350px;
+    margin-top: 370px;
+  }
+  .reviews .top {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
   }
   .contact {
     height: -webkit-fit-content;
@@ -1171,6 +1223,12 @@ footer .right_side {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contact .contact-us {
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
   .contact .contact-us h3 {
     text-align: center;
   }
@@ -1179,6 +1237,9 @@ footer .right_side {
     margin-bottom: 30px;
   }
   .contact form {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     max-width: none;
   }
   .contact form label {
@@ -1202,9 +1263,31 @@ footer .right_side {
     gap: 10px;
   }
 }
-@media (max-width: 495px) {
+@media (max-width: 523px) {
   .benefits {
-    margin-top: 460px;
+    margin-top: 475px;
+  }
+  .player .video {
+    padding: 15px 35px 15px 15px;
+    width: 100%;
+    max-width: 290px;
+    height: 179px;
+  }
+  .player .video .videoscreen {
+    width: 100%;
+    max-width: 290px;
+    height: 179px;
+    object-fit: contain;
+  }
+  .player .video .play_button {
+    width: 40px;
+    height: 40px;
+  }
+  .player .video .ipad_button {
+    width: 17px;
+    height: 17px;
+    top: 81px;
+    right: 7px;
   }
 }
 .dark {
