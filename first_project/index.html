@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="styles/reset.css">
       <link rel="stylesheet" href="styles/style.css">
     </head>
-<body class="dark">
+<body>
   <section class="first_screen">
     <header id="home">
       <div class="container">
@@ -219,5 +219,20 @@
       <a href="#" class="right_side">Privacy Policy</a>
     </div>
   </footer>
+  <script>
+    const now = new Date();
+    const hours = now.getHours();
+    if (hours <= 6  || hours >= 19) {
+      document.querySelector('body').classList.toggle('dark');
+    }
+    let burgerMenu = document.querySelector('.burger');
+    let header = document.querySelector('header');
+    let menu = document.querySelector('nav');
+    burgerMenu.addEventListener('click', function() {
+      menu.classList.toggle('active');
+      header.classList.toggle('active');
+      burgerMenu.classList.toggle('active');
+    })
+  </script>
 </body>
 </html>

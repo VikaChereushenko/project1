@@ -910,14 +910,45 @@ footer {
 @media (max-width: 717px) {
     .first_screen {
         header {
+            &.active {
+                height: auto;
+                padding-top: 10px;
+            }
             div {
                 padding-left: 20px;
                 padding-right: 20px;
                 box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(2, auto);
+                row-gap: 20px;
+                grid-template-areas: "logo burger"
+                                     ". nav";
+                .logo {
+                    grid-area: logo;
+                }
                 nav {
                     display: none;
+                    &.active {
+                        grid-area: nav;
+                        display: flex;
+                        margin-bottom: 10px;
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: end;
+                            gap: 5px;
+                            li {
+                                a {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
                 }
                 .burger {
+                    grid-area: burger;
+                    justify-self: flex-end;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -927,7 +958,6 @@ footer {
                     box-sizing: content-box;
                     width: 30px;
                     height: 30px;
-                    border: 2px solid black;
                     span {
                         display: block;
                         width: 25px;
@@ -938,7 +968,7 @@ footer {
             }
         }
         .first_screen_content {
-            padding-top: 150px;
+            padding-top: 75px;
             padding-left: 20px;
             padding-right: 20px;
             box-sizing: border-box;
@@ -1107,7 +1137,7 @@ footer {
 }
 @media (max-width: 523px) {
     .benefits {
-        margin-top: 475px;
+        margin-top: 450px;
     }
     .player {
         .video {
@@ -1134,6 +1164,21 @@ footer {
         }
     }
 }
+@media (max-width: 355px) {
+    .first_screen {
+        .first_screen_content {
+            padding-top: 10px;
+            .content {
+                p {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .benefits {
+        margin-top: 525px;
+    }
+}
 .dark {
     background-color: #161926;
     .first_screen {
@@ -1158,7 +1203,6 @@ footer {
                     }
                 }
                 .burger {
-                    border: 2px solid white;
                     span {
                         background-color: white;
                     }
