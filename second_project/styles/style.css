@@ -72,10 +72,23 @@
   min-height: fit-content;
   background-image: url(../images/header.png);
   background-repeat: no-repeat;
-  background-size: 100% max-height;
-  padding-top: 54px;
+  background-size: cover;
+  position: relative;
 }
-.first_screen header {
+.first_screen .section-header {
+  padding-top: 54px;
+  width: 100%;
+}
+.first_screen .section-header.fixed {
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.first_screen .section-header header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -86,15 +99,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.first_screen header.fixed {
-  background-image: url(../images/header.png);
-}
-.first_screen header nav {
+.first_screen .section-header header nav {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
-.first_screen header nav ul li {
+.first_screen .section-header header nav ul li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +113,7 @@
           justify-content: space-between;
   gap: 93px;
 }
-.first_screen header nav ul li a {
+.first_screen .section-header header nav ul li a {
   color: #FFF;
   font-family: "Source Sans Pro";
   font-size: 14px;
@@ -118,7 +128,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.first_screen header nav ul li a:before {
+.first_screen .section-header header nav ul li a:before {
   content: "";
   display: block;
   height: 9px;
@@ -127,7 +137,7 @@
   border-radius: 50%;
   margin-right: 14px;
 }
-.first_screen header .socials {
+.first_screen .section-header header .socials {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +146,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.first_screen header .socials .icon-facebook-f {
+.first_screen .section-header header .socials .icon-facebook-f {
   color: #FFF;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -145,7 +155,7 @@
   box-sizing: content-box;
   text-decoration: none;
 }
-.first_screen header .socials .icon-twitter {
+.first_screen .section-header header .socials .icon-twitter {
   color: #FFF;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -154,7 +164,7 @@
   box-sizing: content-box;
   text-decoration: none;
 }
-.first_screen header .socials .icon-instagram {
+.first_screen .section-header header .socials .icon-instagram {
   color: #FFF;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -163,7 +173,7 @@
   box-sizing: content-box;
   text-decoration: none;
 }
-.first_screen header .burger {
+.first_screen .section-header header .burger {
   visibility: hidden;
 }
 .first_screen .first_screen_slider .first_screen_slider_wrapper {
@@ -696,6 +706,15 @@
 
 .gallery {
   padding-top: 150px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .gallery .gallery-heading {
   color: #2C4058;
@@ -724,6 +743,8 @@
   margin-bottom: 20px;
 }
 .gallery .pictures {
+  margin-top: 50px;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 214px);
@@ -750,9 +771,288 @@
 .gallery .pictures img:nth-child(5) {
   grid-area: it-5;
 }
+.gallery .more_pics {
+  display: none;
+  margin-top: 50px;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 214px);
+  gap: 10px;
+  grid-template-areas: "it-1 it-1 it-2 it-3" "it-1 it-1 it-4 it-5";
+}
+.gallery .more_pics img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery .more_pics img:nth-child(1) {
+  grid-area: it-1;
+}
+.gallery .more_pics img:nth-child(2) {
+  grid-area: it-2;
+}
+.gallery .more_pics img:nth-child(3) {
+  grid-area: it-3;
+}
+.gallery .more_pics img:nth-child(4) {
+  grid-area: it-4;
+}
+.gallery .more_pics img:nth-child(5) {
+  grid-area: it-5;
+}
+.gallery .more_pics.visible {
+  display: grid;
+}
+.gallery button {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #2C4058;
+  background: none;
+  padding: 17px 57px;
+  box-sizing: content-box;
+  margin-top: 60px;
+}
+
+.contact {
+  margin-top: 150px;
+  position: relative;
+}
+.contact .location {
+  width: 100%;
+  min-height: 700px;
+}
+.contact .get-in-touch {
+  position: absolute;
+  z-index: 99;
+  bottom: -349px;
+  left: 50%;
+  max-width: 770px;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  min-height: 450px;
+  background-color: #FFF;
+  padding: 60px 60px 68px 60px;
+  box-sizing: border-box;
+}
+.contact .get-in-touch h2 {
+  color: #2C4058;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .get-in-touch h2:before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #2C4058;
+  margin-bottom: 20px;
+}
+.contact .get-in-touch .contacts-wrapper {
+  margin-top: 42px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+.contact .get-in-touch .contacts-wrapper .contacts {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 286px;
+  width: 100%;
+  min-height: 196px;
+}
+.contact .get-in-touch .contacts-wrapper .contacts p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.contact .get-in-touch .contacts-wrapper form {
+  max-width: 310px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .get-in-touch .contacts-wrapper form label {
+  height: 48px;
+  width: 100%;
+}
+.contact .get-in-touch .contacts-wrapper form label input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(44, 64, 88, 0.5);
+}
+.contact .get-in-touch .contacts-wrapper form label input::-webkit-input-placeholder {
+  color: rgba(75, 85, 98, 0.5);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.contact .get-in-touch .contacts-wrapper form label input::-moz-placeholder {
+  color: rgba(75, 85, 98, 0.5);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.contact .get-in-touch .contacts-wrapper form label input:-ms-input-placeholder {
+  color: rgba(75, 85, 98, 0.5);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.contact .get-in-touch .contacts-wrapper form label input::placeholder {
+  color: rgba(75, 85, 98, 0.5);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+.contact .get-in-touch .contacts-wrapper form label input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(44, 64, 88);
+}
+.contact .get-in-touch .contacts-wrapper form button {
+  width: 140px;
+  height: 50px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 11px 34px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  background: none;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+footer {
+  background: url(../images/footer.png);
+  background-size: cover;
+  width: 100%;
+  height: 549px;
+  padding-top: 149px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .links {
+  margin-top: 49px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 770px;
+}
+footer .links .left p {
+  margin-top: 53px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .links .socials {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+footer .links .socials .icon-facebook-f {
+  color: #FFF;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  padding: 11px 15px;
+  box-sizing: content-box;
+  text-decoration: none;
+}
+footer .links .socials .icon-twitter {
+  color: #FFF;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  padding: 11px 12px;
+  box-sizing: content-box;
+  text-decoration: none;
+}
+footer .links .socials .icon-instagram {
+  color: #FFF;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  padding: 11px 13px;
+  box-sizing: content-box;
+  text-decoration: none;
+}
 
 @media (max-width: 1225px) {
-  .first_screen header {
+  .first_screen .section-header header {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -762,19 +1062,19 @@
     row-gap: 15px;
     grid-template-areas: "logo burger" "nav socials";
   }
-  .first_screen header .logo {
+  .first_screen .section-header header .logo {
     grid-area: logo;
   }
-  .first_screen header nav {
+  .first_screen .section-header header nav {
     display: none;
   }
-  .first_screen header nav.active {
+  .first_screen .section-header header nav.active {
     grid-area: nav;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
-  .first_screen header nav.active ul li {
+  .first_screen .section-header header nav.active ul li {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
@@ -783,10 +1083,10 @@
     max-height: fit-content;
     gap: 25px;
   }
-  .first_screen header .socials {
+  .first_screen .section-header header .socials {
     display: none;
   }
-  .first_screen header .socials.active {
+  .first_screen .section-header header .socials.active {
     grid-area: socials;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -795,7 +1095,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .first_screen header .burger {
+  .first_screen .section-header header .burger {
     grid-area: burger;
     justify-self: self-end;
     visibility: visible;
@@ -817,7 +1117,7 @@
     width: 30px;
     height: 30px;
   }
-  .first_screen header .burger span {
+  .first_screen .section-header header .burger span {
     display: block;
     width: 25px;
     height: 3px;
@@ -858,6 +1158,61 @@
     margin-right: 0;
   }
 }
+@media (max-width: 734px) {
+  .contact .get-in-touch {
+    bottom: -650px;
+  }
+  .contact .get-in-touch .contacts-wrapper {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .contact .get-in-touch .contacts-wrapper .contacts p {
+    text-align: center;
+  }
+  .contact .get-in-touch .contacts-wrapper form {
+    gap: 30px;
+  }
+  .contact .get-in-touch .contacts-wrapper form label input::-webkit-input-placeholder {
+    text-align: center;
+  }
+  .contact .get-in-touch .contacts-wrapper form label input::-moz-placeholder {
+    text-align: center;
+  }
+  .contact .get-in-touch .contacts-wrapper form label input:-ms-input-placeholder {
+    text-align: center;
+  }
+  .contact .get-in-touch .contacts-wrapper form label input::placeholder {
+    text-align: center;
+  }
+  .contact .get-in-touch .contacts-wrapper form button {
+    margin: 0 auto;
+  }
+  footer .links {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+  }
+  footer .links .socials {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+  }
+}
 @media (max-width: 430px) {
   .first_screen .first_screen_slider .swiper-wrapper .swiper-slide h2 {
     font-size: 25px;
@@ -869,5 +1224,11 @@
   }
   .first_screen .first_screen_slider .swiper-button-next {
     left: 45%;
+  }
+  .news .news-section .slider {
+    height: 590px;
+  }
+  .news .news-section .slider .news-slider-pagination .swiper-pagination-bullet {
+    margin-left: 30px;
   }
 }

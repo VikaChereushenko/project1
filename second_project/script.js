@@ -41,16 +41,55 @@ Fancybox.bind('[data-fancybox="gallery"]',{
     infinite: true,
   },
 });
-let header =  document.querySelector("header");
+let map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById("googleMap"), {
+    center: { lat: 50.12377, lng: 28.39105 },
+    zoom: 10,
+    mapId: '2f084b4895741534',
+  });
+  const marker = new google.maps.Marker({
+    position: { lat: 50.12377, lng: 28.39105 },
+    map: map,
+    title: "Monticello",
+    icon: {
+      url: "https://i.postimg.cc/30jd33nS/Pin.png",
+      scaledSize: new google.maps.Size(100, 100),
+    },
+  });
+}
+let sectionHeader =  document.querySelector(".section-header");
 let burger = document.querySelector(".burger");
 let nav = document.querySelector("nav")
 let socials = document.querySelector(".socials")
 let swiperWrapper = document.querySelector(".first_screen_slider_wrapper");
 let buttonDetails = document.querySelectorAll(".details")
 let readMore = document.querySelectorAll(".more")
+let morePics = document.querySelector(".more_pics");
+let viewMore = document.querySelector(".view_more");
+let section = document.querySelectorAll("section")
+let navLink =  document.querySelectorAll("nav ul li a")
 
+window.addEventListener("scroll", function (){
+  section.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+    if(top > offset && top < offset + height){
+      navLink.forEach(links => {
+        links.classList.remove('active');
+        document.querySelector ('header nav ul li a[href*=' + id + ']'.classList.add('active'));
+      });
+    }
+  })
+})
 window.addEventListener("scroll", function(){
-header.classList.add('fixed');
+  if (this.window.scrollY > 80) {
+    sectionHeader.classList.add('fixed');
+  }else {
+    sectionHeader.classList.remove('fixed');
+  }
 })
 burger.addEventListener("click", function(){
   nav.classList.toggle('active');
@@ -68,4 +107,13 @@ for (let i = 0; i < buttonDetails.length; i++){
     }
   })
 }
+viewMore.addEventListener('click', function(){
+  morePics.classList.toggle('visible');
+  if(morePics.classList.contains('visible') == true){
+    viewMore.innerHTML = 'SEE LESS';
+  }else {
+    viewMore.innerHTML = 'SEE MORE';
+  }
+})
+
 

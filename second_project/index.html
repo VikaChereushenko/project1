@@ -14,33 +14,35 @@
   </head>
   <body>
     <main>
-      <div class="first_screen" id="about">
-        <header class="container">
-          <a class="logo" href="#about"><img src="images/logo.png" alt=""></a>
-          <nav>
-            <ul>
-              <li>
-                <a href="#about">ABOUT US</a>
-                <a href="#project">PROJECTS</a>
-                <a href="#news">NEWS</a>
-                <a href="#contact">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="socials">
-            <a class="icon-facebook-f" href="#">
-            </a>
-            <a class="icon-twitter" href="#">
-            </a>
-            <a class="icon-instagram" href="#">
-            </a>
-          </div>
-          <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </header>
+      <section class="first_screen" id="about">
+        <div class="section-header">
+          <header class="container">
+            <a class="logo" href="#about"><img src="images/logo.png" alt=""></a>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#about">ABOUT US</a>
+                  <a href="#project">PROJECTS</a>
+                  <a href="#news">NEWS</a>
+                  <a href="#contact">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="socials">
+              <a class="icon-facebook-f" href="#">
+              </a>
+              <a class="icon-twitter" href="#">
+              </a>
+              <a class="icon-instagram" href="#">
+              </a>
+            </div>
+            <div class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </header>
+        </div>
       <div class="first_screen_slider swiper container-swiper">
        <div class="first_screen_slider_wrapper swiper-wrapper">
           <div class="first_screen_slider_slide swiper-slide">
@@ -63,8 +65,8 @@
        <div class="first_screen_slider_pagination swiper-pagination"></div>
        <div class="first_screen_slider_next swiper-button-next"></div>
      </div>
-    </div>
-      <div class="project" id="project">
+    </section>
+      <section class="project" id="project">
         <h2 class="heading">WHAT WE DO</h2>
         <section class="section1">
           <img class="background-s1" src="images/blue.png" alt="">
@@ -104,8 +106,8 @@
             </div>
           </div>
         </section>
-      </div>
-      <div class="news" id="news">
+      </section>
+      <section class="news" id="news">
         <div class="news-section">
           <h2 class="news-heading">LATEST NEWS</h2>
           <div class="slider">
@@ -202,8 +204,8 @@
             <div class="news-slider-prev swiper-button-prev"></div>
           </div>
         </div>
-        </div>
-      <div class="gallery container" id="container">
+      </section>
+      <section class="gallery container" id="container">
         <h2 class="gallery-heading">GALLERY</h2>
         <div class="pictures">
           <img src="images/building_8.png" data-fancybox="gallery" alt="">
@@ -212,11 +214,61 @@
           <img src="images/building_3.png" data-fancybox="gallery" alt=""/>
           <img src="images/building_4.png" data-fancybox="gallery" alt=""/>
         </div>
-        <button>SEE MORE</button>
-      </div>
-      <div class="contact" id="contact"></div>
+        <div class="more_pics">
+          <img src="images/building_8.png" data-fancybox="gallery" alt="">
+          <img src="images/building_1.png" data-fancybox="gallery" alt=""/>
+          <img src="images/building_2.png" data-fancybox="gallery" alt=""/>
+          <img src="images/building_3.png" data-fancybox="gallery" alt=""/>
+          <img src="images/building_4.png" data-fancybox="gallery" alt=""/>
+        </div>
+        <button class="view_more">SEE MORE</button>
+      </section>
+      <section class="contact" id="contact">
+        <div class="get-in-touch">
+          <h2 class="heading">GET IN TOUCH</h2>
+          <div class="contacts-wrapper">
+            <div class="contacts">
+              <p>91 Nolan Extensions Suite 670</p>
+              <p>+001 356-868-2454</p>
+              <p> montichello@service.com</p>
+              <p> From 07:05AM to 19:30PM</p>
+            </div>
+            <form>
+              <label>
+                <input type="text" name="name" placeholder="Enter your name"> 
+              </label>
+              <label>
+                <input type="text" name="email" placeholder="Email"> 
+              </label>
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+        <div class="location">
+          <div class="map">
+            <div id="googleMap" style="width:100%; height: 700px;"></div>
+            <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbcoID_46-QESEIPN9G8OUXHOzNpGMi8o&callback=initMap"></script>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="links">
+        <div class="left">
+          <a class="logo" href="#about"><img src="images/logo.png" alt=""></a>
+          <p>Copyrights © 2020 Montichello</p>
+        </div>
+        <div class="socials">
+          <a class="icon-facebook-f" href="#">
+          </a>
+          <a class="icon-twitter" href="#">
+          </a>
+          <a class="icon-instagram" href="#">
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
+
