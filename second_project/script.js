@@ -58,6 +58,22 @@ function initMap() {
     },
   });
 }
+$(document).ready(function(){
+  $("#main-form").validate({
+    rules:{
+      name: {
+        required: true,
+        minlength: 3,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+    }
+  });
+})
+
+
 let sectionHeader =  document.querySelector(".section-header");
 let burger = document.querySelector(".burger");
 let nav = document.querySelector("nav")
