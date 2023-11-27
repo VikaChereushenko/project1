@@ -1,0 +1,51 @@
+.topHeader {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". logo actions" ;
+    width: 100%;
+    max-width: 100%;
+    height: 56px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    .logo {
+        grid-area: logo;
+        justify-self: center;
+        align-self: center;
+    }
+    .actions {
+        grid-area: actions;
+        align-self: center;
+        justify-self: flex-end;
+        display: flex;
+        .signIn {
+            background: none;
+            border: none;
+            color: #e90606;
+            cursor: pointer;
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-right: 14px;
+            text-transform: uppercase;
+            height: 36px;
+            letter-spacing: 1px;
+            padding: 8px 24px;
+        }
+        .subscribe {
+            background-color: #e90606;
+            color: #fff;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 900;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            border: 3px solid #e90606;
+            border-radius: 3px;
+            height: 36px;
+            letter-spacing: 1px;
+            padding: 8px 24px;
+        }
+    }
+}

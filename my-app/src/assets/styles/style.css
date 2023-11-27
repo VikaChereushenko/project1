@@ -1,0 +1,63 @@
+header {
+  height: 80px;
+  display: grid;
+  grid-template-columns: 175px 1fr 300px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+header nav {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+header nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav ul li a {
+  text-decoration: unset;
+  line-height: 20px;
+  font-weight: 500;
+  color: #adadad;
+}
+header nav ul li a.active {
+  color: #fd6500;
+}
+header .btns {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .btns button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #fd6500;
+  border: unset;
+  height: 50px;
+  min-width: 90px;
+}
+
+footer {
+  min-height: 300px;
+  background-color: #000;
+}
+footer h1 {
+  color: #fff;
+}

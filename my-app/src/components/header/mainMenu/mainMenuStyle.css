@@ -1,0 +1,51 @@
+/*.mainMenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". nav svg";
+    width: 100%;
+    max-width: 100%;
+    height: 56px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    .navigation {
+        grid-area: nav;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            min-width: max-content;
+            li {
+                a {
+                    text-decoration: none;
+                    color: #e90606;
+                    display: flex;
+                    &:after {
+                        content: "";
+                        display: block;
+                        border-right: 2px solid #e90606;
+                        margin-left: 10px;
+                    }
+                    &.active {
+                       color: darkblue;
+                       &:after {
+                        border-right: 2px solid darkblue;
+
+                      }
+                    }
+                }
+            }
+        }
+    }
+    svg {
+        grid-area: svg;
+        justify-self: flex-end;
+        align-self: center;
+    }
+}*/
