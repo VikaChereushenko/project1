@@ -1,4 +1,4 @@
-/*.mainMenu {
+.mainMenu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: ". nav svg";
@@ -36,7 +36,7 @@
                        color: darkblue;
                        &:after {
                         border-right: 2px solid darkblue;
-    
+
                       }
                     }
                 }
@@ -48,4 +48,4 @@
         justify-self: flex-end;
         align-self: center;
     }
-}*/
+}
