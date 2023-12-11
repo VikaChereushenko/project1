@@ -43,11 +43,11 @@
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 900;
-  letter-spacing: 0;
   text-transform: uppercase;
-  border: 3px solid #e90606;
+  text-decoration: unset;
   border-radius: 3px;
   height: 36px;
   letter-spacing: 1px;
   padding: 8px 24px;
+  box-sizing: border-box;
 }

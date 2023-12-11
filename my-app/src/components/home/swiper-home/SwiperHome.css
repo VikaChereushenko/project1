@@ -1,0 +1,10 @@
+.first-swiper {
+  padding: 0 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.first-swiper .first-swiper-slide {
+  background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+  height: 500px;
+  width: 100%;
+}

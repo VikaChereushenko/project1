@@ -12,7 +12,7 @@ function TopHeader () {
       </div>
       <div className="actions">
         <button type="button" className="signIn">sign in</button>
-        <button type="button" className='subscribe'>subscribe</button>
+        <Link to="/subscribe/form"className='subscribe'>subscribe</Link>
       </div>
     <div/>
   </div>

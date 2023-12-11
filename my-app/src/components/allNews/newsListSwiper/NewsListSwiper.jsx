@@ -1,4 +1,4 @@
-import "./_NewsList.scss";
+import "./_NewsListSwiper.scss";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import React from "react";
@@ -7,7 +7,7 @@ const baseURL = "https://newsapi.org/v2/top-headlines";
 const apiKey = "ef39d034e32f4a79bf0ab00254769b14";
 
 
-function NewsList () {
+function NewsListSwiper (props) {
   const [news, setNews] = useState(null);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function NewsList () {
         APIkey: apiKey,
         country: 'ua',
         category: 'general',
-        pageSize: 15,
+        pageSize: 3,
       }})
         .then(response => {
           setNews(response.data.articles);
@@ -44,10 +44,10 @@ function NewsList () {
     const items = news.map((newsItem, index) =>
     <div key={index} className="newsItem" data-newsid={index} onClick={ShowOneItem}>
       <div className="link">
-        <div className="imgWrapper">
+        <div className="img-wrapper">
           <img src={newsItem.urlToImage} alt="NewsImage" />
         </div>
-         <h2>{newsItem.title}</h2>
+          <h2>{newsItem.title}</h2>
       </div>
     </div>
     )
@@ -59,4 +59,4 @@ function NewsList () {
   }
 }
 
-export default NewsList;
+export default NewsListSwiper;
