@@ -2,10 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
 import 'swiper/css/bundle';
 import '../swiper-home/SwiperHome.scss'
-import NewsListSwiper from '../../allNews/newsListSwiper/NewsListSwiper';
 
 
-function MainSwiper () {
+function MainSwiper (props) {
+  const items = props.slide;
     return (
     <Swiper
       modules={[Navigation, Pagination, A11y]}
@@ -17,12 +17,16 @@ function MainSwiper () {
       onSwiper={(swiper) => console.log(swiper)}
       className='first-swiper'
     >
-      <SwiperSlide className='first-swiper-slide'><NewsListSwiper/></SwiperSlide>
-      <SwiperSlide className='first-swiper-slide'><NewsListSwiper/></SwiperSlide>
-      <SwiperSlide className='first-swiper-slide'><NewsListSwiper/></SwiperSlide>
-      <SwiperSlide className='first-swiper-slide'><NewsListSwiper/></SwiperSlide>
+      <SwiperSlide className='first-swiper-slide'>{items}</SwiperSlide>
+      <SwiperSlide className='first-swiper-slide'>{items}</SwiperSlide>
+      <SwiperSlide className='first-swiper-slide'>{items}</SwiperSlide>
+      <SwiperSlide className='first-swiper-slide'>{items}</SwiperSlide>
     </Swiper>
   );
+}
+MainSwiper.defaultProps = {
+  class: 'swiper',
+  slide: '',
 }
 
 export default MainSwiper;

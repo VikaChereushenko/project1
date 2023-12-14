@@ -7,7 +7,7 @@ const baseURL = "https://newsapi.org/v2/top-headlines";
 const apiKey = "ef39d034e32f4a79bf0ab00254769b14";
 
 
-function NewsListSwiper (props) {
+function NewsListSwiper () {
   const [news, setNews] = useState(null);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
